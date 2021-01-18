@@ -1,6 +1,8 @@
 module.exports = {
   someSidebar: {
-    Zeplo: ['doc1', 'doc2', 'doc3'],
-    Features: ['mdx'],
+    Zeplo: ['intro', 'getting-started', 'auth'],
+    Features: ['queue', 'retry', 'delay', 'schedule', 'bulk', 'step', 'tracing', 'environments'],
+    Reference: ['api', 'cli'],
+    Other: ['faq', 'limits'],
   },
 }

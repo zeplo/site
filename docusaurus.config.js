@@ -42,18 +42,17 @@ module.exports = {
       ],
     },
     footer: {
-      style: 'dark',
       links: [
         {
           title: 'Docs',
           items: [
             {
-              label: 'Style Guide',
+              label: 'Docs',
               to: 'docs/',
             },
             {
-              label: 'Second Doc',
-              to: 'docs/doc2/',
+              label: 'Getting Started',
+              to: 'docs/getting-started',
             },
           ],
         },
