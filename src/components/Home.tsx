@@ -22,7 +22,7 @@ function Home () {
       />
       <div css={styles.splash}>
         <h1>Zero config<br /> message queue</h1>
-        <p>Turn any API into a message queue, just add <code>ralley.to/</code> prefix - supports job tracing, delays and scheduling `</p>
+        <p>Turn any API into a message queue, just add <code>ralley.to/</code> prefix - supports job tracing, delays and scheduling.</p>
         <div css={styles.next}>
           <Link to='https://console.zeplo.io/signup'><Button primary size='large'>Get Started</Button></Link>
           <Link to='/docs'><Button size='large' css={styles.demobtn}>Docs</Button></Link>
