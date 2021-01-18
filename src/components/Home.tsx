@@ -155,7 +155,9 @@ function Home () {
             </div>
           </Col>
           <Col xs={12} sm={12} md={6}>
-            <img alt='log' src={useBaseUrl('img/home/log.png')} css={css`max-width: 450px; width: 100%;`} />
+            <LazyLoad height={300} once offset={200}>
+              <img alt='log' src={useBaseUrl('img/home/log.png')} css={css`max-width: 450px; width: 100%;`} />
+            </LazyLoad>
           </Col>
         </Row>
       </div>
@@ -163,7 +165,9 @@ function Home () {
       <div css={[styles.section, styles.latency]}>
         <Row className='gutter-row'>
           <Col xs={12} sm={12} md={6}>
-            <img alt='alert' src={useBaseUrl('img/home/alert.png')} css={css`max-width: 450px; width: 100%; margin-bottom: 2em;`} />
+            <LazyLoad height={300} once offset={200}>
+              <img alt='alert' src={useBaseUrl('img/home/alert.png')} css={css`max-width: 450px; width: 100%; margin-bottom: 2em;`} />
+            </LazyLoad>
           </Col>
           <Col xs={12} sm={12} md={6}>
             <div css={css`margin-left: 2em;`}>
@@ -188,7 +192,9 @@ function Home () {
             </div>
           </Col>
           <Col xs={12} sm={12} md={6}>
-            <img alt='alert' src={useBaseUrl('img/home/fix.png')} css={css`max-width: 450px; width: 100%;`} />
+            <LazyLoad height={300} once offset={200}>
+              <img alt='alert' src={useBaseUrl('img/home/fix.png')} css={css`max-width: 450px; width: 100%;`} />
+            </LazyLoad>
           </Col>
         </Row>
       </div>
