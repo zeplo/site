@@ -80,6 +80,14 @@ module.exports = {
               label: 'GitHub',
               href: 'https://github.com/zeplo',
             },
+            {
+              label: 'Privacy',
+              href: '/privacy',
+            },
+            {
+              label: 'Terms',
+              href: '/terms',
+            },
           ],
         },
       ],
@@ -88,7 +96,7 @@ module.exports = {
     announcementBar: {
       id: 'name_change',
       content:
-        'We’ve changed our name from Ralley to Zeplo',
+        '<a target="_blank" href="https://zeplo.io/blog/ralley-to-zeplo/">We’ve changed our name from Ralley to Zeplo</a>',
       backgroundColor: 'rgb(111, 77, 247)',
       textColor: '#fff',
     },

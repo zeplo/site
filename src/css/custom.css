@@ -75,11 +75,15 @@ body .announcementBarCloseable_node_modules-\@docusaurus-theme-classic-lib-next-
   padding: 0.6em 1em;
   font-size: 1em;
   font-weight: 600;
-  height: 40px;
+  height: 42px;
 }
 
 body .announcementBar_node_modules-\@docusaurus-theme-classic-lib-next-theme-AnnouncementBar- {
-  height: 40px;
+  height: 42px;
+}
+
+body .announcementBarContent_node_modules-\@docusaurus-theme-classic-lib-next-theme-AnnouncementBar- a {
+  text-decoration: none;
 }
 
 /*
