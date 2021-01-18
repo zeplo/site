@@ -5,7 +5,7 @@ sidebar_label: Bulk
 slug: /bulk
 ---
 
-The `/bulk` API allows you to send multiple request jobs to Zeplo at once in a single transaction. Once the request is accepted, it's guaranteed that all your jobs have been queued in Zeplo.
+The `/bulk` API allows you to send multiple request jobs to Zeplo at once in a single transaction. Once the request is accepted, it's guaranteed that all your jobs have been queued in Zeplo. All jobs are run in parallel, if you need to run jobs sequentially use [step requests](/docs/step) instead.
 
 Send a `POST` request to the `zeplo.to/bulk?_token=<your_token>` API with a JSON body array of requests you'd like to send (and add `Content-Type: "application/json"` header).
 
@@ -34,3 +34,7 @@ The response will be an array of IDs:
   ...
 }]
 ```
+
+:::note
+You can only send `body` values as JSON or string values for bulk requests.
+:::

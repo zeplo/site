@@ -25,7 +25,7 @@ The following diagram shows an example of some steps that you might want to comp
 
 ### Sending the step flow
 
-In order to achieve this, we must first assign a `step` name to each of the steps in the flow. Each step must also specify which other steps it depends on by specifying a list of step names as `_requires` parameter (or `X-Zeplo-Requires`).
+In order to achieve this, we must first assign a step name to each of the steps using `_step` parameter (or `X-Zeplo-Step`). Each step can then specify which other steps it depends on, by specifying a list of step names using the `_requires=A,B` parameter (or `X-Zeplo-Requires`).
 
 <Tabs
   defaultValue="js"
@@ -36,26 +36,19 @@ In order to achieve this, we must first assign a `step` name to each of the step
 <TabItem value="js">
 
 ```js
-import request from 'axios'
+import axios from 'axios'
 
-request.post('zeplo.to/step', [{
-  step: 'A'
-  url: 'https://url.com/a',
+axios.post('zeplo.to/step', [{
+  url: 'https://url.com/a?_step=A',
 }, {
-  step: 'B',
-  url: 'https://url.com/b?_requires=A',
+  url: 'https://url.com/b?_step=B&_requires=A',
 }, {
-  step: 'C'
-  url: 'https://url.com/c?_requires=A',
+  url: 'https://url.com/c?_step=C&_requires=A',
 }, {
-  step: 'D',
-  url: 'https://url.com/d?_requires=B',
+  url: 'https://url.com/d?_step=D&_requires=B',
 }, {
-  step: 'E',
-  url: 'https://url.com/e?_requires=D,C',
+  url: 'https://url.com/e?_step=E&_requires=D,C',
 }, {
-  step: 'F',
-  requires: ['E'],
   url: 'https://url.com/f?_requires=E',
 }])
 ```
@@ -63,15 +56,18 @@ request.post('zeplo.to/step', [{
 </TabItem>
 </Tabs>
 
+:::note
+You can only send `body` values as JSON or string values for step requests.
+:::
 
 ### Using inputs from dependent steps
 
-Each step is passed the a response from each of the steps that were marked as `_requires`. If you added `_requires=A,B` then you would receive a request with the following body.
+Each step is passed the `id` and `response` from each of the steps it `_requires`. For example, if you added `_requires=A,B` then you would receive a request with the following body. If you passed a body value then it would be passed as `body`.
 
 ```js
 {
-  'A': { id: "30e771cc-c816-413d-c1bb-407234b46ee3-iow", body: { x: 1 }, headers: { ... }, ... },
-  'B': { id: "1ab9797f-db05-48b8-c861-b649115734d9-iow", body: { y: 2 }, headers: { ... }, ... },
+  'A': { id: "30e771cc-c816-413d-c1bb-407234b46ee3-iow", response: { body: { x: 1 }, headers: { ... }, ... } },
+  'B': { id: "1ab9797f-db05-48b8-c861-b649115734d9-iow", response: { body: { y: 2 }, headers: { ... }, ... } },
 }
 ```
 
