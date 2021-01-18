@@ -4,12 +4,14 @@ import { css } from '@emotion/react'
 export interface ButtonProps extends React.DetailedHTMLProps<React.ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement> {
   primary?: boolean
   size?: 'small'|'default'|'large'
+  block?: boolean
 }
 
-export default function Button ({ primary, size, ...props }: ButtonProps) {
+export default function Button ({ primary, size, block, ...props }: ButtonProps) {
   const allStyles = [styles.base]
   if (size) allStyles.push(styles[size])
   if (primary) allStyles.push(styles.primary)
+  if (block) allStyles.push(styles.block)
   return (
     <button css={allStyles} {...props} />
   )
@@ -49,6 +51,7 @@ const styles = {
   large: css`
     padding: 6.4px 15px;
     font-size: 16px;
+    height: 40px;
   `,
   primary: css`
     color: #fff;
@@ -56,5 +59,9 @@ const styles = {
     border-color: #00b782;
     text-shadow: none;
     box-shadow: 0 2px 0 rgba(0,0,0,.045);
+  `,
+  block: css`
+    display: block;
+    width: 100%;
   `,
 }

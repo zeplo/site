@@ -3,7 +3,6 @@ import { Global, css } from '@emotion/react'
 import Link from '@docusaurus/Link'
 import useBaseUrl from '@docusaurus/useBaseUrl'
 import useThemeContext from '@theme/hooks/useThemeContext'
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 import LazyLoad from 'react-lazyload'
 import { Row, Col } from 'react-flexbox-grid'
 import Button from '../components/Button'
@@ -11,8 +10,6 @@ import HomeUseCases from '../components/HomeUseCases'
 import HomeRun from '../components/HomeRun'
 
 function Home () {
-  const context = useDocusaurusContext()
-  const { siteConfig = {} } = context
   const { isDarkTheme } = useThemeContext()
   return (
     <div>

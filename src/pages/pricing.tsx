@@ -1,10 +1,14 @@
 import React from 'react'
-import { css } from '@emotion/react'
+import Layout from '@theme/Layout'
+import Pricing from '../components/Pricing'
 
-export default function Pricing () {
+function PricingPage () {
   return (
-    <div css={css`color: red;`}>
-      This is a pricing page
-    </div>
+    <Layout
+      title={'Pricing'}>
+       <Pricing />
+    </Layout>
   )
 }
+
+export default PricingPage
