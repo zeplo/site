@@ -24,6 +24,7 @@
 
 html[data-theme='dark'] {
   --ifm-color-secondary: #28312f;
+  --ifm-color-white:  #333;
 }
 
 body {
@@ -52,7 +53,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar__items.navbar__items--right {
   flex: 0 1 auto;
-  background: var(--ifm-background-color);
+  background: var(--ifm-color-white);
   border-radius: 6px;
   opacity: 0.8;
   padding-right: 1em;
