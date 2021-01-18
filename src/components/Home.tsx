@@ -163,7 +163,7 @@ function Home () {
       <div css={[styles.section, styles.latency]}>
         <Row className='gutter-row'>
           <Col xs={12} sm={12} md={6}>
-            <img alt='alert' src={useBaseUrl('img/home/alert.png')} css={css`max-width: 450px; width: 100%;`} />
+            <img alt='alert' src={useBaseUrl('img/home/alert.png')} css={css`max-width: 450px; width: 100%; margin-bottom: 2em;`} />
           </Col>
           <Col xs={12} sm={12} md={6}>
             <div css={css`margin-left: 2em;`}>
@@ -234,6 +234,7 @@ const styles = {
       margin: 1em;
       color: #919191;
       font-size: 1.3em;
+      line-height: 1.5;
     }
     h5 {
       color: #008F65;

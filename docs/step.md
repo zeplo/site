@@ -38,7 +38,7 @@ In order to achieve this, we must first assign a `step` name to each of the step
 ```js
 import request from 'axios'
 
-request.post('step', [{
+request.post('zeplo.to/step', [{
   step: 'A'
   url: 'https://url.com/a',
 }, {
