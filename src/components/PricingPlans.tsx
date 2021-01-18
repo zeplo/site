@@ -52,7 +52,7 @@ function PricingPlans ({ compact, onPlanClick }: PricingPlansProps) {
           <div css={styles.features(theme)}>
             {featuresEl.slice(1)}
           </div>
-          <Link to='/signup'>
+          <a href='https://console.zeplo.io/signup' >
             <Button
               size='large'
               block
@@ -62,7 +62,7 @@ function PricingPlans ({ compact, onPlanClick }: PricingPlansProps) {
             >
               {actionBtnTitle}
             </Button>
-          </Link>
+          </a>
         </div>
       </Col>
     )

@@ -100,6 +100,9 @@ module.exports = {
       backgroundColor: 'rgb(111, 77, 247)',
       textColor: '#fff',
     },
+    gtag: {
+      trackingID: 'G-P0TKB73NJM',
+    },
   },
   presets: [
     [
@@ -123,14 +126,15 @@ module.exports = {
       },
     ],
   ],
-  // plugins: [
-  //   [
-  //     'docusaurus-plugin-module-alias',
-  //     {
-  //       alias: {
-  //         '#': path.resolve(__dirname, '../src'),
-  //       },
-  //     },
-  //   ],
-  // ],
+  plugins: ['@docusaurus/plugin-ideal-image',
+    [
+      '@docusaurus/plugin-sitemap',
+      {
+        cacheTime: 600 * 1000, // 600 sec - cache purge period
+        changefreq: 'weekly',
+        priority: 0.5,
+        trailingSlash: false,
+      },
+    ],
+  ],
 }

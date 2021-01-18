@@ -24,7 +24,7 @@ function Home () {
         <h1>Zero config<br /> message queue</h1>
         <p>Powerful message queue with advanced tracing, delays and scheduling of jobs - powered by HTTPS/2.</p>
         <div css={styles.next}>
-          <Link to='/signup'><Button primary size='large'>Get Started</Button></Link>
+          <Link to='https://console.zeplo.io/signup'><Button primary size='large'>Get Started</Button></Link>
           <Link to='/docs'><Button size='large' css={styles.demobtn}>Docs</Button></Link>
         </div>
       </div>
@@ -207,7 +207,7 @@ function Home () {
         <h2>Get Started</h2>
         <p css={styles.subtitle}>Try Zeplo for free, and get started in under 5 minutes!</p>
         <div css={[styles.next, css`text-align: center;`]}>
-          <Link to='/signup'><Button primary size='large'>Get Started</Button></Link>
+          <Link to='https://console.zeplo.io/signup'><Button primary size='large'>Get Started</Button></Link>
           <Link to='/docs'><Button size='large'>Docs</Button></Link>
         </div>
       </div>
