@@ -4,6 +4,7 @@
  * bundles Infima by default. Infima is a CSS framework designed to
  * work well for content-centric websites.
  */
+ @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
 
 /* You can override the default Infima variables here. */
 :root {
@@ -14,15 +15,47 @@
   --ifm-color-primary-light: #00c88f;
   --ifm-color-primary-lighter: #00d196;
   --ifm-color-primary-lightest: #00eda9;
+  --ifm-color-secondary: #F4F8F7;
+  --ifm-color-black: #333;
   --ifm-code-font-size: 95%;
+  --ifm-font-size-base: 15px;
+  --docusaurus-announcement-bar-height: 40px;
+}
+
+html[data-theme='dark'] {
+  --ifm-color-secondary: #28312f;
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
+.navbar.navbar--fixed-top {
+  background: none;
+  box-shadow: none;
 }
 
 .navbar__brand {
-  height: 1.6rem;
+  height: 1.8rem;
 }
 
 .navbar__title {
   display: none;
+}
+
+.navbar__items.navbar__items--right {
+  flex: 0 1 auto;
+  background: var(--ifm-background-color);
+  border-radius: 6px;
+  opacity: 0.8;
+  padding-right: 1em;
 }
 
 .navbar__toggle > svg {
@@ -36,3 +69,74 @@
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
 }
+
+body .announcementBarCloseable_node_modules-\@docusaurus-theme-classic-lib-next-theme-AnnouncementBar- {
+  text-align: left;
+  padding: 0.6em 1em;
+  font-size: 1em;
+  font-weight: 600;
+  height: 40px;
+}
+
+body .announcementBar_node_modules-\@docusaurus-theme-classic-lib-next-theme-AnnouncementBar- {
+  height: 40px;
+}
+
+/*
+
+--ifm-background-color
+--ifm-background-surface-color
+--ifm-button-background-color
+--ifm-code-font-size
+--ifm-color-black
+--ifm-color-content
+--ifm-color-content-inverse
+--ifm-color-content-secondary
+--ifm-color-emphasis-100
+--ifm-color-emphasis-200
+--ifm-color-emphasis-400
+--ifm-color-emphasis-600
+--ifm-color-emphasis-900
+--ifm-color-feedback-background
+--ifm-color-primary
+--ifm-color-primary-dark
+--ifm-color-primary-darker
+--ifm-color-primary-darkest
+--ifm-color-primary-light
+--ifm-color-primary-lighter
+--ifm-color-primary-lightest
+--ifm-color-secondary
+--ifm-color-secondary-darkest
+--ifm-color-secondary-lighter
+--ifm-color-white
+--ifm-container-width
+--ifm-font-base-color
+--ifm-font-base-color-inverse
+--ifm-font-color-base
+--ifm-font-color-base-inverse
+--ifm-font-color-secondary
+--ifm-font-family-base
+--ifm-font-family-monospace
+--ifm-font-size-base
+--ifm-font-weight-bold
+--ifm-footer-background-color
+--ifm-global-border-width
+--ifm-global-radius
+--ifm-global-spacing
+--ifm-h2-font-size
+--ifm-h3-font-size
+--ifm-leading
+--ifm-leading-desktop
+--ifm-navbar-height
+--ifm-navbar-padding-horizontal
+--ifm-pre-line-height
+--ifm-pre-padding
+--ifm-spacing-horizontal
+--ifm-tabs-color-active
+--ifm-toc-border-color
+--ifm-toc-link-color
+--ifm-transition-fast
+--ifm-transition-timing-default
+--ifm-z-index-fixed
+
+*/

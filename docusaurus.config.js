@@ -1,3 +1,5 @@
+// const path = require('path')
+
 module.exports = {
   title: 'Zeplo',
   tagline: 'Zero configuration message queue',
@@ -28,9 +30,9 @@ module.exports = {
           position: 'right',
         },
         {
-          to: 'blog', 
-          label: 'Blog', 
-          position: 'right'
+          to: 'blog',
+          label: 'Blog',
+          position: 'right',
         },
         {
           href: 'https://console.zeplo.io',
@@ -84,6 +86,13 @@ module.exports = {
       ],
       copyright: `Copyright © ${new Date().getFullYear()} Zeplo`,
     },
+    announcementBar: {
+      id: 'name_change',
+      content:
+        'We’ve changed our name from Ralley to Zeplo',
+      backgroundColor: 'rgb(111, 77, 247)',
+      textColor: '#fff',
+    },
   },
   presets: [
     [
@@ -107,4 +116,14 @@ module.exports = {
       },
     ],
   ],
-};
+  // plugins: [
+  //   [
+  //     'docusaurus-plugin-module-alias',
+  //     {
+  //       alias: {
+  //         '#': path.resolve(__dirname, '../src'),
+  //       },
+  //     },
+  //   ],
+  // ],
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="84px" height="84px" viewBox="0 0 84 84" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>ruby</title>
+    <g id="ruby" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="rubygem-73b83c79780e7e71d4a159177f2cbdb95b07466141beab0380842122d27f4f93" transform="translate(9.000000, 17.000000)">
+            <polygon id="Shape" fill="#FE0000" points="20.6989719 14.5203121 45.402809 14.5203121 32.8305506 49.9029273"></polygon>
+            <polygon id="Shape" fill="#FF0000" points="45.2680281 14.3666636 65.9403034 14.3666636 32.8331461 49.7663115"></polygon>
+            <polygon id="Shape" fill="#FF676F" points="20.8265225 14.5032794 0.154247191 14.5032794 32.8331461 49.7663115"></polygon>
+            <polygon id="Shape" fill="#FF676F" points="10.9919663 0.31137766 20.9846629 14.6560408 32.8331461 0.31137766"></polygon>
+            <polygon id="Shape" fill="#FF0000" points="32.8331461 0.31137766 45.1098876 14.6560408 54.531573 0.31137766"></polygon>
+            <polygon id="Shape" fill="#DF0000" points="45.0787416 14.503102 54.5161854 0.17476182 65.9517978 14.503102"></polygon>
+            <polygon id="Shape" fill="#FF0000" points="0 14.5194249 10.9958596 0.31137766 21.1274157 14.5194249"></polygon>
+            <polygon id="Shape" fill="#FF2E36" points="20.8432079 14.5203121 32.8292528 0.17476182 45.2548652 14.5203121"></polygon>
+        </g>
+    </g>
+</svg>
