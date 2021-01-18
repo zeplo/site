@@ -70,7 +70,12 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0 var(--ifm-pre-padding);
 }
 
-body .announcementBarCloseable_node_modules-\@docusaurus-theme-classic-lib-next-theme-AnnouncementBar- {
+div[class^='announcementBar'] {
+  height: 42px;
+}
+
+
+div[class^='announcementBarContent'] {
   text-align: left;
   padding: 0.6em 1em;
   font-size: 1em;
@@ -78,12 +83,12 @@ body .announcementBarCloseable_node_modules-\@docusaurus-theme-classic-lib-next-
   height: 42px;
 }
 
-body .announcementBar_node_modules-\@docusaurus-theme-classic-lib-next-theme-AnnouncementBar- {
-  height: 42px;
+div[class^='announcementBarContent'] a {
+  text-decoration: none;
 }
 
-body .announcementBarContent_node_modules-\@docusaurus-theme-classic-lib-next-theme-AnnouncementBar- a {
-  text-decoration: none;
+div[class^='announcementBarContent'] a:hover {
+  text-decoration: underline;
 }
 
 /*
