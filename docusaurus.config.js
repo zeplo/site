@@ -105,7 +105,7 @@ module.exports = {
       textColor: '#fff',
     },
     gtag: {
-      trackingID: 'G-P0TKB73NJM',
+      trackingID: 'G-HLPGYDM6N5',
     },
   },
   presets: [
