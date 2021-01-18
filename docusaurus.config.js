@@ -30,7 +30,7 @@ module.exports = {
           position: 'right',
         },
         {
-          to: 'blog',
+          href: 'https://zeplo.io/blog',
           label: 'Blog',
           position: 'right',
         },
