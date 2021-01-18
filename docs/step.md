@@ -13,7 +13,7 @@ import TabItem from '@theme/TabItem';
 This feature is currently in **ALPHA** preview, and must be enabled on your account before use. Please contact hi@zeplo.io if you would like to use this feature.
 :::
 
-It's often useful to run a series of requests in sequence or parallel, and use the response from one job as the input for another.
+The `/step` API allows you to send a series of requests in sequence or parallel, and use the response from one request job as the input for another.
 
 The following diagram shows an example of some steps that you might want to complete after receiving an order:
 
@@ -22,6 +22,8 @@ The following diagram shows an example of some steps that you might want to comp
   src={require('./img/steps-flow.png').default}
   alt="Steps Flow"
 />
+
+### Sending the step flow
 
 In order to achieve this, we must first assign a `step` name to each of the steps in the flow. Each step must also specify which other steps it depends on by specifying a list of step names as `_requires` parameter (or `X-Zeplo-Requires`).
 
@@ -62,7 +64,7 @@ request.post('step', [{
 </Tabs>
 
 
-### Passing input between steps
+### Using inputs from dependent steps
 
 Each step is passed the a response from each of the steps that were marked as `_requires`. If you added `_requires=A,B` then you would receive a request with the following body.
 
@@ -74,5 +76,5 @@ Each step is passed the a response from each of the steps that were marked as `_
 ```
 
 :::note
-You will only receive a value in the body if the response value is a string or JSON. Otherwise body will be set to `null`.
+You will only receive a value in the `body` if the response value is a string or JSON. Otherwise `body` will be set to `null`.
 :::
