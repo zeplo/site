@@ -28,8 +28,8 @@ export {}
 declare global {
   interface Window {
     analytics: any
-    Beacon: any
-    drift: any
+    $crisp: any
+    CRISP_WEBSITE_ID: string
     jsonlint: any
     // eslint-disable-next-line camelcase
     __fs_org: string
