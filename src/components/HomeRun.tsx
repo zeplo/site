@@ -3,7 +3,7 @@ import { css } from '@emotion/react'
 import map from 'lodash/map'
 import merge from 'lodash/merge'
 
-const { REACT_APP_QUEUE_ENDPOINT } = process.env
+const { REACT_APP_QUEUE_ENDPOINT = 'zeplo.to' } = process.env
 
 const modes = [{
   name: 'Queue',
