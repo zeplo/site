@@ -116,7 +116,7 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/zeplo/site/edit/master/docs/',
+            'https://github.com/zeplo/site/edit/master/',
         },
         blog: {
           showReadingTime: true,
