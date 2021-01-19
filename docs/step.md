@@ -62,18 +62,17 @@ You can only send `body` values as JSON or string values for step requests.
 
 ### Using the output from required steps
 
-If you add a `_requires` parameter (or `X-Zeplo-Requires` header), then additional headers will be automatically added that provide the response output from each of the required steps. These headers are formatted as a JSON string and are passed in the `X-Zeplo-Step-<step_name>` header property.
+If you add a `_requires` parameter (or `X-Zeplo-Requires` header), then additional headers will be automatically added in the format `X-Zeplo-Step-<step_name>`. Each header will have the ID of the request job matching the name of the step.
 
 For example, if you have a step with the URL `https://url.com/e?_step=E&_requires=C,D`, then you would receive the following two additional headers:
 
 ```bash
-X-Zeplo-Step-C: '{ id: "1ab9797f-db05-48b8-c861-b649115734d9-iow", response: { body: { y: 2 }, headers: { ... }, ... } },'
-X-Zeplo-Step-D: '{ id: "30e771cc-c816-413d-c1bb-407234b46ee3-iow", response: { body: { x: 1 }, headers: { ... }, ... } }'
+X-Zeplo-Step-C: "1ab9797f-db05-48b8-c861-b649115734d9-iow"
+X-Zeplo-Step-D: "30e771cc-c816-413d-c1bb-407234b46ee3-iow"
 ```
 
-These headers will be formatted as a JSON string, and you will need to parse the JSON string to obtain the values. The `response` value will be formatted in the same way as returned from the [request API](/docs/api#request-object).
+If you want to get the response output for these steps, then you can use the ID from the header and the request API.
 
-:::note
-You will only receive a value for `response.body` if the response value is a string or JSON. Otherwise `body` will be set to `null`. You can still access the raw body content using the request `id` and the [request API](/docs/api).
-:::
-
+```
+/requests/<id>/response.body
+```
