@@ -13,14 +13,14 @@ The Zeplo CLI helps you to view requests, manage your account and includes a `de
 Install using NPM:
 
 ```
-npm install -g @ralley/cli
+npm install -g @zeplo/cli
 ```
 
 Install using script:
 
 ```bash
-curl -fsSL get.ralley.io -o get-ralley.sh
-sh get-ralley.sh
+curl -fsSL get.zeplo.io -o get-zeplo.sh
+sh get-zeplo.sh
 ```
 
 You should update Zeplo by running the same command.
@@ -29,17 +29,17 @@ You should update Zeplo by running the same command.
 ### Usage
 
 ```
-Usage: ralley <command> [options]
+Usage: zeplo <command> [options]
 
 Commands:
-  ralley workspaces   Manage workspaces
-  ralley queue <url>  Send a queued request to a service
-  ralley requests     Manage requests
-  ralley config       Configure CLI
-  ralley login        Login to Zeplo
-  ralley logout       Logout (and delete user config)
-  ralley signup       Sign up to Zeplo
-  ralley dev          Start dev environment
+  zeplo workspaces   Manage workspaces
+  zeplo queue <url>  Send a queued request to a service
+  zeplo requests     Manage requests
+  zeplo config       Configure CLI
+  zeplo login        Login to Zeplo
+  zeplo logout       Logout (and delete user config)
+  zeplo signup       Sign up to Zeplo
+  zeplo dev          Start dev environment
 
 Options:
   --version, -v    Show version number                                 [boolean]
@@ -54,18 +54,18 @@ Options:
 
 ```
 
-For additional usage commands use `-h` on sub-commands. E.g. `ralley workspaces -h`.
+For additional usage commands use `-h` on sub-commands. E.g. `zeplo workspaces -h`.
 
 
 
-### Dev Server (`ralley dev`)
+### Dev Server (`zeplo dev`)
 
-A local dev server that can be used during development. It implements the [same API](https://zeplo.io/docs) as the `ralley.to`. By default it runs on http://localhost:4747 - you can specify an alternative port using `-p`.
+A local dev server that can be used during development. It implements the [same API](https://zeplo.io/docs) as the `zeplo.to`. By default it runs on http://localhost:4747 - you can specify an alternative port using `-p`.
 
 To start a dev server use:
 
 ```
-ralley dev
+zeplo dev
 ```
 
 And to queue a request use: 
@@ -74,12 +74,12 @@ And to queue a request use:
 curl http://localhost:4747/myurl.com?_delay=10
 ```
 
-The `queue` and `requests` commands support a `--dev` flag which can be used to target your dev server instead of the Ralley production servers. E.g. To list requests on your dev server use `ralley requests --dev`
+The `queue` and `requests` commands support a `--dev` flag which can be used to target your dev server instead of the Zeplo production servers. E.g. To list requests on your dev server use `zeplo requests --dev`
 
 You can specify a workspace ID (and optional token) when creating the dev server, this allows you to start multiple servers without causing conflicts.
 
 ```sh
-ralley dev -w name:token123
+zeplo dev -w name:token123
 ```
 
 
@@ -87,7 +87,7 @@ ralley dev -w name:token123
 
 There are some minor differences to the production server:
 
- * If token is not provided using `ralley dev -w name:token`, then _token is not required. In production, _token param is always required.
+ * If token is not provided using `zeplo dev -w name:token`, then _token is not required. In production, _token param is always required.
 
  * Only the the following endpoints are supported. These endpoints work in the same way as the [Zeplo API](https://zeplo.io/docs), unless otherwise specified:
 
