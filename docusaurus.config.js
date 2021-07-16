@@ -64,6 +64,10 @@ module.exports = {
           title: 'Community',
           items: [
             {
+              label: 'Status',
+              href: 'https://zeplo.statuspage.io/',
+            },
+            {
               label: 'Stack Overflow',
               href: 'https://stackoverflow.com/questions/tagged/zeplo',
             },
