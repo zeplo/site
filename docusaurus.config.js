@@ -81,8 +81,8 @@ module.exports = {
           title: 'More',
           items: [
             {
-              label: 'Blog',
-              to: 'blog',
+              label: 'Tagteam',
+              href: 'https://tagteam.is',
             },
             {
               label: 'GitHub',
