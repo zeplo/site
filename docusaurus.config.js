@@ -30,11 +30,6 @@ module.exports = {
           position: 'right',
         },
         {
-          href: 'https://zeplo.io/blog',
-          label: 'Blog',
-          position: 'right',
-        },
-        {
           href: 'https://console.zeplo.io',
           label: 'Console',
           position: 'right',
@@ -81,8 +76,8 @@ module.exports = {
           title: 'More',
           items: [
             {
-              label: 'Tagteam',
-              href: 'https://tagteam.is',
+              label: 'Hiring',
+              href: 'https://hirestack.ai',
             },
             {
               label: 'GitHub',
