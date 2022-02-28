@@ -15,7 +15,7 @@ export default function PricingFaq () {
         <Link to='/docs#schedule'>scheduled request</Link> job.
       </PricingFaqItem>
       <PricingFaqItem title='Do you offer a trial?'>
-        Yes, the paid plans come with a 14 day trial (excluding request usage). The free plan also has 2K free requests every month, so you can trial that forever! If you need more requests before going live, send us an e-mail.
+        You can try our developer plan, which includes 2K free requests every month for free forever. If you need more requests before going live, send us an e-mail.
       </PricingFaqItem>
       <PricingFaqItem title='What payment do you accept?'>
         We accept payments via Visa, MasterCard, American Express, Diners, and JCB. We do not accept PayPal or Purchase Orders.
