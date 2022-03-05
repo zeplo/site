@@ -11,6 +11,11 @@ module.exports = {
   organizationName: 'zeplo', // Usually your GitHub org/user name.
   projectName: 'site', // Usually your repo name.
   themeConfig: {
+    posthog: {
+      apiKey: 'phc_bnhdghRYJEmiSxn5knZPsZuf3g2k7LdBAEKQkPEB4Hw',
+      appUrl: 'https:/hirestacka.ai', // optional
+      enableInDevelopment: false, // optional
+    },
     navbar: {
       title: 'Zeplo',
       logo: {
@@ -129,5 +134,6 @@ module.exports = {
       },
     ],
   ],
+  plugins: ['posthog-docusaurus'],
   // plugins: ['@docusaurus/plugin-ideal-image'],
 }

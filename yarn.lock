@@ -9307,6 +9307,11 @@ postcss@^7.0.0, postcss@^7.0.1, postcss@^7.0.14, postcss@^7.0.17, postcss@^7.0.2
     source-map "^0.6.1"
     supports-color "^6.1.0"
 
+posthog-docusaurus@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/posthog-docusaurus/-/posthog-docusaurus-1.0.3.tgz#bd49dd7f425bb6bce81ac49d3c251f8b0f9cd9d9"
+  integrity sha512-gvvHpKmOIcO7Sj68T2/vfYR/VfZmYoTaZO6kDZTJXQ309jdrhlrDncPr/Gjy+C0W9zaVlrOT6vvC7SdBBmvbdg==
+
 prebuild-install@^5.3.4:
   version "5.3.6"
   resolved "https://registry.yarnpkg.com/prebuild-install/-/prebuild-install-5.3.6.tgz#7c225568d864c71d89d07f8796042733a3f54291"
