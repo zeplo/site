@@ -101,13 +101,13 @@ module.exports = {
       ],
       copyright: `Copyright © ${new Date().getFullYear()} Zeplo`,
     },
-    announcementBar: {
-      id: 'name_change',
-      content:
-        '<a target="_blank" href="https://zeplo.io/blog/ralley-to-zeplo/">We’ve changed our name from Ralley to Zeplo</a>',
-      backgroundColor: 'rgb(111, 77, 247)',
-      textColor: '#fff',
-    },
+    // announcementBar: {
+    //   id: 'name_change',
+    //   content:
+    //     '<a target="_blank" href="https://zeplo.io/blog/ralley-to-zeplo/">We’ve changed our name from Ralley to Zeplo</a>',
+    //   backgroundColor: 'rgb(111, 77, 247)',
+    //   textColor: '#fff',
+    // },
     gtag: {
       trackingID: 'G-HLPGYDM6N5',
     },
