@@ -13,7 +13,7 @@ module.exports = {
   themeConfig: {
     posthog: {
       apiKey: 'phc_bnhdghRYJEmiSxn5knZPsZuf3g2k7LdBAEKQkPEB4Hw',
-      appUrl: 'https:/hirestacka.ai', // optional
+      appUrl: 'https:/zeplo.io', // optional
       enableInDevelopment: false, // optional
     },
     navbar: {
