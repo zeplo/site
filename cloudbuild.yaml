@@ -15,5 +15,5 @@ steps:
 
 - name: technosophos/slack-notify
   env:
-  - 'SLACK_WEBHOOK=https://hooks.slack.com/services/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'
+  - 'SLACK_WEBHOOK=$_SLACK_WEBHOOK'
   - 'SLACK_MESSAGE=Deployed website to PROD'
