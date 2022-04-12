@@ -11,6 +11,7 @@ steps:
   args: ['yarn', 'deploy']
   env:
   - 'NETLIFY_AUTH_TOKEN=$_NETLIFY_AUTH_TOKEN'
+  - 'NETLIFY_SITE_ID=5eae7b71-32d4-4bf7-99ab-dc02d6c3a504'
 
 - name: technosophos/slack-notify
   env:
