@@ -10,6 +10,7 @@ module.exports = {
   favicon: 'img/favicon.ico',
   organizationName: 'zeplo', // Usually your GitHub org/user name.
   projectName: 'site', // Usually your repo name.
+  trailingSlash: false,
   themeConfig: {
     posthog: {
       apiKey: 'phc_bnhdghRYJEmiSxn5knZPsZuf3g2k7LdBAEKQkPEB4Hw',
@@ -81,10 +82,6 @@ module.exports = {
           title: 'More',
           items: [
             {
-              label: 'Hiring',
-              href: 'https://hirestack.ai',
-            },
-            {
               label: 'GitHub',
               href: 'https://github.com/zeplo',
             },
@@ -130,6 +127,10 @@ module.exports = {
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
+        },
+        sitemap: {
+          changefreq: 'weekly',
+          priority: 0.5,
         },
       },
     ],
