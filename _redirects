@@ -1,0 +1,3 @@
+/blog  https://blog-redirect.zeplo.io/blog/  200!
+/blog/*  https://blog-redirect.zeplo.io/blog/:splat  200!
+
