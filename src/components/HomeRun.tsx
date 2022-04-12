@@ -3,8 +3,6 @@ import { css } from '@emotion/react'
 import map from 'lodash/map'
 import merge from 'lodash/merge'
 
-const { REACT_APP_QUEUE_ENDPOINT = 'zeplo.to' } = process.env
-
 const modes = [{
   name: 'Queue',
   url: { method: 'POST' },
@@ -79,7 +77,7 @@ function HomeRunUrl ({ config }: HomeRunUrlProps) {
   const paramsStr = map(params, (val, key) => `${key}=${val}`).join('&')
   return (
     <span>
-      curl {method !== 'GET' ? `-X ${method}` : ''} &quot;{REACT_APP_QUEUE_ENDPOINT}/<strong>{url}{paramsStr ? '?' : ''}{paramsStr}&quot;</strong>
+      curl {method !== 'GET' ? `-X ${method}` : ''} &quot;zeplo.to/<strong>{url}{paramsStr ? '?' : ''}{paramsStr}&quot;</strong>
     </span>
   )
 }

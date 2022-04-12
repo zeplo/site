@@ -1,6 +1,6 @@
-import { BillingPlan } from '@ralley/types/billing'
+// import { BillingPlan } from '@zeplo/types/billing'
 
-const plans: { [key: string]: BillingPlan } = {
+const plans: { [key: string]: any } = {
   developer: {
     id: 'developer',
     name: 'Developer',

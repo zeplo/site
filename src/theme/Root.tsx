@@ -30,6 +30,8 @@ function Root ({ children }) {
         // eslint-disable-next-line
         window.$crisp = []
         window.CRISP_WEBSITE_ID = '3009d82b-fb6b-4e08-80e2-13c6e6d28974'
+
+        return <></>
       }}
       </BrowserOnly>
      {children}

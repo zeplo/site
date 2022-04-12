@@ -36,7 +36,7 @@ module.exports = {
           position: 'right',
         },
         {
-          href: 'https://console.zeplo.io',
+          to: 'https://console.zeplo.io',
           label: 'Console',
           position: 'right',
         },
@@ -66,15 +66,15 @@ module.exports = {
           items: [
             {
               label: 'Status',
-              href: 'https://zeplo.statuspage.io/',
+              to: 'https://zeplo.statuspage.io/',
             },
             {
               label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/zeplo',
+              to: 'https://stackoverflow.com/questions/tagged/zeplo',
             },
             {
               label: 'Twitter',
-              href: 'https://twitter.com/zeploio',
+              to: 'https://twitter.com/zeploio',
             },
           ],
         },
@@ -83,15 +83,15 @@ module.exports = {
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/zeplo',
+              to: 'https://github.com/zeplo',
             },
             {
               label: 'Privacy',
-              href: '/privacy',
+              to: '/privacy',
             },
             {
               label: 'Terms',
-              href: '/terms',
+              to: '/terms',
             },
           ],
         },
@@ -105,9 +105,6 @@ module.exports = {
     //   backgroundColor: 'rgb(111, 77, 247)',
     //   textColor: '#fff',
     // },
-    gtag: {
-      trackingID: 'G-HLPGYDM6N5',
-    },
   },
   presets: [
     [
@@ -127,6 +124,9 @@ module.exports = {
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
+        },
+        gtag: {
+          trackingID: 'G-HLPGYDM6N5',
         },
         sitemap: {
           changefreq: 'weekly',

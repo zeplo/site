@@ -11,7 +11,7 @@
   --ifm-color-primary: #00B682;
   --ifm-color-primary-dark: #00a475;
   --ifm-color-primary-darker: #009b6f;
-  --ifm-color-primary-darkest: #007f5b;
+  --ifm-color-primary-darkest: #090909;
   --ifm-color-primary-light: #00c88f;
   --ifm-color-primary-lighter: #00d196;
   --ifm-color-primary-lightest: #00eda9;
@@ -19,6 +19,7 @@
   --ifm-color-black: #333;
   --ifm-code-font-size: 95%;
   --ifm-font-size-base: 15px;
+  --ifm-font-family-base: 'Open Sans', sans-serif;
   --docusaurus-announcement-bar-height: 40px;
 }
 
@@ -36,6 +37,10 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
+}
+
+code {
+  color: var(--ifm-color-primary-darker);
 }
 
 .navbar.navbar--fixed-top {
@@ -69,6 +74,10 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
+}
+
+.menu__link {
+  padding: 1em;
 }
 
 div[class^='announcementBar'] {
