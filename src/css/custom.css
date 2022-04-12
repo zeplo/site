@@ -21,6 +21,13 @@
   --ifm-font-size-base: 15px;
   --ifm-font-family-base: 'Open Sans', sans-serif;
   --docusaurus-announcement-bar-height: 40px;
+  --ifm-h1-vertical-rhythm-top: 4;
+  --ifm-h2-vertical-rhythm-top: 3;
+  --ifm-h3-vertical-rhythm-top: 3;
+  --ifm-heading-vertical-rhythm-top: 1.5;
+  --ifm-h1-vertical-rhythm-bottom: 1.5;
+  --ifm-heading-vertical-rhythm-bottom: 1;
+  --ifm-leading-desktop: 1.5;
 }
 
 html[data-theme='dark'] {
@@ -99,6 +106,17 @@ div[class^='announcementBarContent'] a {
 
 div[class^='announcementBarContent'] a:hover {
   text-decoration: underline;
+}
+
+.markdown {
+  font-size: 1.1em;
+  line-height: 2;
+}
+
+
+.blogPostData_node_modules-\@docusaurus-theme-classic-lib-next-theme-BlogPostItem-styles-module {
+  opacity: 0.6;
+  padding-top: 1em;
 }
 
 /*

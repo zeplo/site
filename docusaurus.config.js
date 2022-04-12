@@ -36,6 +36,11 @@ module.exports = {
           position: 'right',
         },
         {
+          to: 'blog',
+          label: 'Blog',
+          position: 'right',
+        },
+        {
           to: 'https://console.zeplo.io',
           label: 'Console',
           position: 'right',
