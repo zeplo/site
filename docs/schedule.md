@@ -43,4 +43,4 @@ When a scheduled request is sent to the URL, the following additional request he
 
 When you combine the [delay](/docs/delay) (or delay until) with a schedule, then the schedule will not commence until the specified delay has passed. Subsequent scheduled requests will not have any delay applied and will be run at the given interval.
 
-When you combine retry [retry](/docs/retry) with a schedule, then the retry parameters will be passed to each subsequent scheduled request. 
+When you combine [retry](/docs/retry) with a schedule, then the retry parameters will be passed to each subsequent scheduled request. 
