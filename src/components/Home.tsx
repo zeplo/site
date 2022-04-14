@@ -21,8 +21,8 @@ function Home () {
         }}
       />
       <div css={styles.splash}>
-        <h1>Zero config<br /> message queue</h1>
-        <p>Turn any API into a message queue, just add <code>zeplo.to/</code> prefix - supports job tracing, delays and scheduling.</p>
+        <h1>Magical request queues for serverless</h1>
+        <p>Turn any API into a message queue, just add <code>zeplo.to/</code> prefix - supports retry, delays, cron and more.</p>
         <div css={styles.next}>
           <Link to='https://console.zeplo.io/signup'><Button primary size='large'>Get Started</Button></Link>
           <Link to='/docs'><Button size='large' css={styles.demobtn}>Docs</Button></Link>
@@ -263,12 +263,12 @@ const styles = {
     margin-right: auto;
   `,
   splash: css`
-    padding: 0 1em;
+    padding: 0 2em;
     margin: 0 auto;
     max-width: 900px;
     margin-top: 3em;
     h1 {
-      max-width: 500px;
+      max-width: 700px;
       font-size: 4em;
       font-weight: 600;
       line-height: 1.1;

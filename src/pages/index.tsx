@@ -5,8 +5,8 @@ import Home from '../components/Home'
 function HomePage () {
   return (
     <Layout
-      title={'Zero configuration message queue'}
-      description={'Turn any API into a message queue, just add ralley.to/ prefix - supports job tracing, retries, delays and scheduling'}
+      title={'Magical request queues for serverless'}
+      description={'Turn any API into a message queue, just add zeplo.to/ prefix - supports retry, delays, cron and more.'}
     >
        <Home />
     </Layout>

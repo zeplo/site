@@ -2,7 +2,7 @@
 
 module.exports = {
   title: 'Zeplo',
-  tagline: 'Zero configuration message queue',
+  tagline: 'Magical request queues for serverless',
   url: 'https://zeplo.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
