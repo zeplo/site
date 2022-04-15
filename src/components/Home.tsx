@@ -22,7 +22,7 @@ function Home () {
       />
       <div css={styles.splash}>
         <h1>Magical request queues for serverless</h1>
-        <p>Turn any API into a message queue, just add <code>zeplo.to/</code> prefix - supports retry, delays, cron and more.</p>
+        <p>Push any HTTP request into a queue — just prefix with <code>zeplo.to/</code>. Supports retry, delays, cron and more.</p>
         <div css={styles.next}>
           <Link to='https://console.zeplo.io/signup'><Button primary size='large'>Get Started</Button></Link>
           <Link to='/docs'><Button size='large' css={styles.demobtn}>Docs</Button></Link>
