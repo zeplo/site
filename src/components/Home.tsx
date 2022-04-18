@@ -24,8 +24,8 @@ function Home () {
         <h1>Magical request queues for serverless</h1>
         <p>Push any HTTP request into a queue — just prefix with <code>zeplo.to/</code>. Supports retry, delays, cron and more.</p>
         <div css={styles.next}>
-          <Link to='https://console.zeplo.io/signup'><Button primary size='large'>Get Started</Button></Link>
-          <Link to='/docs'><Button size='large' css={styles.demobtn}>Docs</Button></Link>
+          <Link to='https://calendly.com/zeplo-sid/zeplo-demo'><Button primary size='large'>Get a Demo</Button></Link>
+          <Link to='/docs'><Button size='large' css={styles.demobtn}>View the docs</Button></Link>
         </div>
       </div>
 
@@ -285,9 +285,9 @@ const styles = {
     }
   `,
   demobtn: css`
-    background: #F6F6F6;
+    background: #333333;
     border: 0;
-    color: #818181;
+    color: #ffffff;
     :hover {
       background: #f1f1f1;
       color: #444;
