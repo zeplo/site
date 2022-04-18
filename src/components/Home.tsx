@@ -96,7 +96,7 @@ function Home () {
             <Col xs={12} sm={4}>
               <div css={styles.feature}>
                 <h3><span css={styles.number}>1</span>Scale with ease</h3>
-                <p>Existing queues scale in a different way to your HTTPS services, so you have to maintain two distinct architectures that doubles the devops workload.</p>
+                <p>Existing queues scale in a different way to your HTTPS services, so you have to maintain two distinct architectures that double the devops workload.</p>
               </div>
             </Col>
             <Col xs={12} sm={4}>
